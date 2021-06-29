@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\client">
+      <UniqueIdentifier>{700ec3d4-8215-4dee-9b6a-8245c3cb5dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\clock">
+      <UniqueIdentifier>{c5eea51f-bf8f-4e9c-85c2-568312043f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\console">
+      <UniqueIdentifier>{26335a68-76a5-4902-8e5b-cb41bc7b9d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\host">
+      <UniqueIdentifier>{0e411b34-ecb5-40e9-aa0d-d140ef0669ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\misc">
+      <UniqueIdentifier>{d2bf3b41-2b67-4dda-a6d5-6b069c2b1575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network">
+      <UniqueIdentifier>{65536b80-59e8-4741-a13c-777976cc8b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nullrender">
+      <UniqueIdentifier>{4b98003e-57ff-4f13-9e35-c14998a48aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\progs">
+      <UniqueIdentifier>{3357365e-3e5b-4084-980b-16b7fda96e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render">
+      <UniqueIdentifier>{a70a7175-7c9e-4ff4-a439-c47bb474985b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\server">
+      <UniqueIdentifier>{94a9b57d-58cf-4a73-b079-3493c379d39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sound">
+      <UniqueIdentifier>{b15442fb-915d-41af-a113-67efa65500f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{eaccbdf2-0ec3-4213-b9da-e0624c20e598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="client\cl_demo.c">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_input.c">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_main.c">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_parse.c">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="client\cl_tent.c">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\null_ralias.clk.c">
+      <Filter>Source Files\clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\null_rmain.clk.c">
+      <Filter>Source Files\clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\null_world.clk.c">
+      <Filter>Source Files\clock</Filter>
+    </ClCompile>
+    <ClCompile Include="console\conproc.c">
+      <Filter>Source Files\console</Filter>
+    </ClCompile>
+    <ClCompile Include="console\console.c">
+      <Filter>Source Files\console</Filter>
+    </ClCompile>
+    <ClCompile Include="host\host.c">
+      <Filter>Source Files\host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\host_cmd.c">
+      <Filter>Source Files\host</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\chase.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\cmd.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\common.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\crc.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\cvar.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\dsrumble.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\hash.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\keys.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\mathlib.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\menu.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\sbar.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\view.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\wad.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\world.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\zone.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net_dgrm.c">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net_loop.c">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net_main.c">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net_udp.c">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_boxleaf.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_bsp.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_cd.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_draw.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_efrags.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_in.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_light.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_misc.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_model.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_net.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_screen.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_sky.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_snd.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_sys.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="nullrender\null_vid.c">
+      <Filter>Source Files\nullrender</Filter>
+    </ClCompile>
+    <ClCompile Include="progs\pr_cmds.c">
+      <Filter>Source Files\progs</Filter>
+    </ClCompile>
+    <ClCompile Include="progs\pr_edict.c">
+      <Filter>Source Files\progs</Filter>
+    </ClCompile>
+    <ClCompile Include="progs\pr_exec.c">
+      <Filter>Source Files\progs</Filter>
+    </ClCompile>
+    <ClCompile Include="render\ds_textures.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\r_part.c">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\ds_sound.c">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\snd_mem.c">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="sound\snd_mix.c">
+      <Filter>Source Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win32\glview.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win32\GLWindow.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\cpu\fnet_cpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\cpu\arm\fnet_arm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\cpu\arm\fnet_arm_eth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\cpu\arm\fnet_arm_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_arp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_checksum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_eth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_icmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_icmp6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_igmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_inet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_ip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_ip6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_isr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_loop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_mempool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_nd6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_netbuf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_netif.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_prot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_raw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_stack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_stdlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_tcp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\stack\fnet_udp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dsnifi\dsnifi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\services\poll\fnet_poll.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fnet_stack\services\dhcp\fnet_dhcp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_main.c">
+      <Filter>Source Files\server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_move.c">
+      <Filter>Source Files\server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_phys.c">
+      <Filter>Source Files\server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_user.c">
+      <Filter>Source Files\server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\anorms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\asm_i386.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bspfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cdaudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\conproc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cvar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cyg-profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d_iface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d_ifacea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ds_textures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\keys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mathlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modelgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net_dgrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net_wins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\null_ralias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pr_comp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\progs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\quakeasm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\quakedef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\r_alias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\r_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\spritegn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\winquake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\zone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\win32\GLWindow.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\fnet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\fnet_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\fnet_user_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\compiler\fnet_comp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\compiler\fnet_comp_asm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\compiler\fnet_comp_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\cpu\fnet_cpu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\cpu\fnet_cpu_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\cpu\arm\fnet_arm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\cpu\arm\fnet_arm_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_arp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_checksum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_eth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_eth_prv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_icmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_icmp6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_igmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_inet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip_prv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip6_prv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_isr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_mempool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_nd6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_netbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_netif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_netif_prv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_prot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_socket_prv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_stack_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_stdlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_tcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_timer_prv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\stack\fnet_udp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\services\poll\fnet_poll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\services\dhcp\fnet_dhcp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fnet_stack\services\dhcp\fnet_dhcp_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\quake.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="winquake.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

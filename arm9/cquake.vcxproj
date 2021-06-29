@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F562CCA-7BC6-4900-A675-2BA89AB247AB}</ProjectGuid>
+    <RootNamespace>cquake</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\include;C:\devl\cnquake\fnet_stack;C:\devl\cnquake\fnet_stack\compiler;C:\devl\cnquake\fnet_stack\cpu;C:\devl\cnquake\fnet_stack\os;C:\devl\cnquake\fnet_stack\services;C:\devl\cnquake\fnet_stack\stack;C:\devl\cnquake\fnet_stack\services\dhcp;C:\devl\cnquake\fnet_stack\services\poll;C:\devl\cnquake\fnet_stack\services\dns;C:\devl\cnquake\fnet_stack\cpu\arm;c:\devl\cnquake\fnet_stack\services\ping;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;USE_DSNIFI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\devl\cquake\arm9\include;C:\devl\cquake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;WS2_32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\fnet_stack\cpu\arm\fnet_arm.c" />
+    <ClCompile Include="..\fnet_stack\cpu\arm\fnet_arm_eth.c" />
+    <ClCompile Include="..\fnet_stack\cpu\arm\fnet_arm_timer.c" />
+    <ClCompile Include="..\fnet_stack\cpu\fnet_cpu.c" />
+    <ClCompile Include="..\fnet_stack\services\dhcp\fnet_dhcp.c" />
+    <ClCompile Include="..\fnet_stack\services\poll\fnet_poll.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_arp.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_checksum.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_error.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_eth.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_icmp.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_icmp6.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_igmp.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_inet.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_ip.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_ip6.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_isr.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_loop.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_mempool.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_nd6.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_netbuf.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_netif.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_prot.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_raw.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_socket.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_stack.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_stdlib.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_tcp.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_timer.c" />
+    <ClCompile Include="..\fnet_stack\stack\fnet_udp.c" />
+    <ClCompile Include="client\cl_demo.c" />
+    <ClCompile Include="client\cl_input.c" />
+    <ClCompile Include="client\cl_main.c" />
+    <ClCompile Include="client\cl_parse.c" />
+    <ClCompile Include="client\cl_tent.c" />
+    <ClCompile Include="clock\null_ralias.clk.c" />
+    <ClCompile Include="clock\null_rmain.clk.c" />
+    <ClCompile Include="clock\null_world.clk.c" />
+    <ClCompile Include="console\conproc.c" />
+    <ClCompile Include="console\console.c" />
+    <ClCompile Include="dsnifi\dsnifi.c" />
+    <ClCompile Include="host\host.c" />
+    <ClCompile Include="host\host_cmd.c" />
+    <ClCompile Include="misc\chase.c" />
+    <ClCompile Include="misc\cmd.c" />
+    <ClCompile Include="misc\common.c" />
+    <ClCompile Include="misc\crc.c" />
+    <ClCompile Include="misc\cvar.c" />
+    <ClCompile Include="misc\dsrumble.c" />
+    <ClCompile Include="misc\hash.c" />
+    <ClCompile Include="misc\keys.c" />
+    <ClCompile Include="misc\mathlib.c" />
+    <ClCompile Include="misc\menu.c" />
+    <ClCompile Include="misc\sbar.c" />
+    <ClCompile Include="misc\view.c" />
+    <ClCompile Include="misc\wad.c" />
+    <ClCompile Include="misc\world.c" />
+    <ClCompile Include="misc\zone.c" />
+    <ClCompile Include="network\net_dgrm.c" />
+    <ClCompile Include="network\net_loop.c" />
+    <ClCompile Include="network\net_main.c" />
+    <ClCompile Include="network\net_udp.c" />
+    <ClCompile Include="nullrender\null_boxleaf.c" />
+    <ClCompile Include="nullrender\null_bsp.c" />
+    <ClCompile Include="nullrender\null_cd.c" />
+    <ClCompile Include="nullrender\null_draw.c" />
+    <ClCompile Include="nullrender\null_efrags.c" />
+    <ClCompile Include="nullrender\null_in.c" />
+    <ClCompile Include="nullrender\null_light.c" />
+    <ClCompile Include="nullrender\null_misc.c" />
+    <ClCompile Include="nullrender\null_model.c" />
+    <ClCompile Include="nullrender\null_net.c" />
+    <ClCompile Include="nullrender\null_screen.c" />
+    <ClCompile Include="nullrender\null_sky.c" />
+    <ClCompile Include="nullrender\null_snd.c" />
+    <ClCompile Include="nullrender\null_sys.c" />
+    <ClCompile Include="nullrender\null_vid.c" />
+    <ClCompile Include="progs\pr_cmds.c" />
+    <ClCompile Include="progs\pr_edict.c" />
+    <ClCompile Include="progs\pr_exec.c" />
+    <ClCompile Include="render\ds_textures.c" />
+    <ClCompile Include="render\r_part.c" />
+    <ClCompile Include="server\sv_main.c" />
+    <ClCompile Include="server\sv_move.c" />
+    <ClCompile Include="server\sv_phys.c" />
+    <ClCompile Include="server\sv_user.c" />
+    <ClCompile Include="sound\ds_sound.c" />
+    <ClCompile Include="sound\snd_mem.c" />
+    <ClCompile Include="sound\snd_mix.c" />
+    <ClCompile Include="..\win32\glview.cpp" />
+    <ClCompile Include="..\win32\GLWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\fnet_stack\compiler\fnet_comp.h" />
+    <ClInclude Include="..\fnet_stack\compiler\fnet_comp_asm.h" />
+    <ClInclude Include="..\fnet_stack\compiler\fnet_comp_config.h" />
+    <ClInclude Include="..\fnet_stack\cpu\arm\fnet_arm.h" />
+    <ClInclude Include="..\fnet_stack\cpu\arm\fnet_arm_config.h" />
+    <ClInclude Include="..\fnet_stack\cpu\fnet_cpu.h" />
+    <ClInclude Include="..\fnet_stack\cpu\fnet_cpu_config.h" />
+    <ClInclude Include="..\fnet_stack\fnet.h" />
+    <ClInclude Include="..\fnet_stack\fnet_config.h" />
+    <ClInclude Include="..\fnet_stack\fnet_user_config.h" />
+    <ClInclude Include="..\fnet_stack\services\dhcp\fnet_dhcp.h" />
+    <ClInclude Include="..\fnet_stack\services\dhcp\fnet_dhcp_config.h" />
+    <ClInclude Include="..\fnet_stack\services\poll\fnet_poll.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_arp.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_checksum.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_debug.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_error.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_eth.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_eth_prv.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_icmp.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_icmp6.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_igmp.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_inet.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip6.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip6_prv.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_ip_prv.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_isr.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_loop.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_mempool.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_nd6.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_netbuf.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_netif.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_netif_prv.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_prot.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_raw.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_socket.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_socket_prv.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_stack.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_stack_config.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_stdlib.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_tcp.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_timer.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_timer_prv.h" />
+    <ClInclude Include="..\fnet_stack\stack\fnet_udp.h" />
+    <ClInclude Include="include\anorms.h" />
+    <ClInclude Include="include\asm_i386.h" />
+    <ClInclude Include="include\bspfile.h" />
+    <ClInclude Include="include\cdaudio.h" />
+    <ClInclude Include="include\client.h" />
+    <ClInclude Include="include\cmd.h" />
+    <ClInclude Include="include\common.h" />
+    <ClInclude Include="include\conproc.h" />
+    <ClInclude Include="include\console.h" />
+    <ClInclude Include="include\crc.h" />
+    <ClInclude Include="include\cvar.h" />
+    <ClInclude Include="include\cyg-profile.h" />
+    <ClInclude Include="include\d_iface.h" />
+    <ClInclude Include="include\d_ifacea.h" />
+    <ClInclude Include="include\draw.h" />
+    <ClInclude Include="include\ds_textures.h" />
+    <ClInclude Include="include\hash.h" />
+    <ClInclude Include="include\input.h" />
+    <ClInclude Include="include\keys.h" />
+    <ClInclude Include="include\mathlib.h" />
+    <ClInclude Include="include\menu.h" />
+    <ClInclude Include="include\model.h" />
+    <ClInclude Include="include\modelgen.h" />
+    <ClInclude Include="include\net.h" />
+    <ClInclude Include="include\net_dgrm.h" />
+    <ClInclude Include="include\net_loop.h" />
+    <ClInclude Include="include\net_wins.h" />
+    <ClInclude Include="include\null_ralias.h" />
+    <ClInclude Include="include\pr_comp.h" />
+    <ClInclude Include="include\progs.h" />
+    <ClInclude Include="include\protocol.h" />
+    <ClInclude Include="include\quakeasm.h" />
+    <ClInclude Include="include\quakedef.h" />
+    <ClInclude Include="include\r_alias.h" />
+    <ClInclude Include="include\r_local.h" />
+    <ClInclude Include="include\render.h" />
+    <ClInclude Include="include\resource.h" />
+    <ClInclude Include="include\sbar.h" />
+    <ClInclude Include="include\screen.h" />
+    <ClInclude Include="include\server.h" />
+    <ClInclude Include="include\sound.h" />
+    <ClInclude Include="include\spritegn.h" />
+    <ClInclude Include="include\sys.h" />
+    <ClInclude Include="include\vid.h" />
+    <ClInclude Include="include\view.h" />
+    <ClInclude Include="include\wad.h" />
+    <ClInclude Include="include\winquake.h" />
+    <ClInclude Include="include\world.h" />
+    <ClInclude Include="include\zone.h" />
+    <ClInclude Include="..\win32\GLWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\quake.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="winquake.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
